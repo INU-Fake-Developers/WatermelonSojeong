@@ -35,10 +35,10 @@ let fruitSlowDown = false;
 let clickChangeFruit = true;
 
 // 광고 링크: false 또는 빈 문자열은 광고로 건너뛰지 않음을 의미합니다.
-let adLink = 'https://636f-codenav-8grj8px727565176-1256524210.tcb.qcloud.la/yupi_wechat.png';
+let adLink = 'https://instagram.com/ssoo_shin';
 
 // 웹 페이지 제목 수정: "when will my life begin" 대체
-document.getElementsByTagName("title")[0].innerText = 'When will my life begin';
+document.getElementsByTagName("title")[0].innerText = 'When will my life begin?';
 
 // 선택 팝업 창 열기: false를 true로 변경
 let selectModal = false;
