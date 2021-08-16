@@ -1,45 +1,45 @@
 /**
- * 声明，本项目仅帮助大家学习技术及娱乐，切勿将修改后的网站大规模传播及商用，以避免侵权！
+ * 이 프로젝트는 모든 사람이 기술과 엔터테인먼트를 배우는 데 도움이 될 뿐이며 침해를 피하기 위해 수정된 웹 사이트를 대규모로 퍼뜨리거나 상업화하지 않음을 선언합니다!
  */
 
-// 额外分数：修改数字
+// 보너스 포인트: 숫자 수정
 let extraScore = 1;
 
-// 无敌模式：true 改为 false
+// 무적 모드: true를 false로 변경
 let wuDi = true;
 
-// 第一个水果：修改数字为 0-10, 0 为葡萄，9 为半个西瓜
+// 첫 번째 과일: 숫자를 0-10으로 수정, 0은 포도, 9는 수박 반개
 let firstFruit = 0;
 
-// 水果合成反转：false 改为 true
+// 과일 합성 역: 거짓에서 참으로
 let reverseLevelUp = false;
 
-// 指定生成的水果：默认值: 不开启反转 0-5 开启反转 6-11，修改对应数字即可控制随机生成的水果范围
-const minRandomFruitNum = reverseLevelUp ? 6 : 0; // 生成随机水果最小值（0-10）0 为葡萄，9 为半个西瓜
-const maxRandomFruitNum = reverseLevelUp ? 11 : 5; // 生成随机水果最大值（1-11）0 为葡萄，9 为半个西瓜
+// 생성된 과일 지정: 기본값: 역방향 0-5 켜지 않음 역방향 6-11 켜고 해당 숫자를 수정하여 무작위로 생성되는 과일의 범위를 제어
+const minRandomFruitNum = reverseLevelUp ? 6 : 0; // 무작위 과일 생성 최소값(0-10) 0은 포도, 9는 수박 반
+const maxRandomFruitNum = reverseLevelUp ? 11 : 5; // 무작위 과일의 최대값 생성(1-11) 0은 포도, 9는 수박 반
 let setFruits = {
-  // 指定前几次生成的水果，可填入任意数量的数字，0 为葡萄，9 为半个西瓜
+  // 이전 몇 번에서 생성된 과일을 지정하십시오. 숫자를 얼마든지 입력할 수 있습니다. 0 = 포도, 9 = 수박 반
   startFruits: reverseLevelUp ? [10, 10, 9, 8, 8, 7] : [0, 0, 1, 2, 2, 3],
   randomFunction: () => {
     return minRandomFruitNum + Math.floor(Math.random() * (maxRandomFruitNum - minRandomFruitNum));
   }
 }
 
-// 让水果更 Q 弹：false 改为大于 0 小于 1 的任意小数（推荐 0.9）
+// 과일을 더 많이 만들기 Q: 0보다 크고 1보다 작은 소수점으로 잘못된 변경(0.9 권장)
 let fruitQTan = false;
 
-// 让水果下落缓慢：false 改为大于 0 的任意数，值越大阻力越大，下落越慢（推荐 5）
+// 천천히 떨어지는 과일: false를 0보다 큰 숫자로 변경, 값이 클수록 저항이 클수록 떨어지는 속도가 느려집니다(권장 5)
 let fruitSlowDown = false;
 
-// 点击右上方图标更换水果：false 改为 true 即可
+// 과일을 변경하려면 오른쪽 상단의 아이콘을 클릭하십시오. false에서 true로 변경
 let clickChangeFruit = true;
 
-// 广告链接：false 或为空字符串表示不会跳转到广告
-let adLink = 'https://636f-codenav-8grj8px727565176-1256524210.tcb.qcloud.la/yupi_wechat.png';
+// 광고 링크: false 또는 빈 문자열은 광고로 건너뛰지 않음을 의미합니다.
+let adLink = 'https://instagram.com/ssoo_shin';
 
-// 修改网页标题：将 "合成大西瓜" 进行替换
-document.getElementsByTagName("title")[0].innerText = '合成大西瓜';
+// 웹 페이지 제목 수정: "when will my life begin" 대체
+document.getElementsByTagName("title")[0].innerText = 'When will my life begin?';
 
-// 开启选分弹窗：将 false 改为 true
+// 선택 팝업 창 열기: false를 true로 변경
 let selectModal = false;
 
